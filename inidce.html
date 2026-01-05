@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compañía de Luz | Texas</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 5px 0;
+    }
+
+    .idioma button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .plan {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .precio {
+      color: #16a34a;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .boton {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background: #1d4ed8;
+    }
+
+   
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #e5e7eb;
+    }
+    .whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+  </style>
+  
+
+</head>
+
+<body>
+
+<header>
+  <h1 id="titulo">⚡ Compañía de Luz - Texas</h1>
+  <div class="idioma">
+    <button onclick="cambiarIdioma('es')">Español</button>
+    <button onclick="cambiarIdioma('en')">English</button>
+  </div>
+</header>
+
+<section class="contenedor">
+  <div class="plan">
+    <h3 id="plan1">Plan Residencial Básico</h3>
+    <p class="precio">$0.12 USD / kWh</p>
+    <a href="https://wa.me/528684028470?text=Hola%20estoy%20interesado%20en%20contratar%20un%20plan%20de%20luz%20en%20Texas"
+   target="_blank"
+   class="boton"
+   style="display:inline-block; text-decoration:none;">
+   Contratar plan
+</a>
+    </div>
+
+  <div class="plan">
+    <h3 id="plan2">Plan Residencial Fijo</h3>
+    <p class="precio">$0.15 USD / kWh</p>
+    <a href="https://wa.me/528684028470?text=Hola%20estoy%20interesado%20en%20contratar%20un%20plan%20de%20luz%20en%20Texas"
+   target="_blank"
+   class="boton"
+   style="display:inline-block; text-decoration:none;">
+   Contratar plan
+</a>
+
+  </div>
+
+  <div class="plan">
+    <h3 id="plan3">Plan Comercial</h3>
+    <p class="precio">$0.18 USD / kWh</p>
+    <a href="https://wa.me/528684028470?text=Hola%20estoy%20interesado%20en%20contratar%20un%20plan%20de%20luz%20en%20Texas"
+   target="_blank"
+   class="boton"
+   style="display:inline-block; text-decoration:none;">
+   Contratar plan
+</a>
+
+  </div>
+</section>
+
+
+<footer id="footer">
+  © 2026 - Compañía de Energía Eléctrica | Texas
+</footer>
+
+<script>
+
+function cambiarIdioma(idioma) {
+  if (idioma === "es") {
+    document.getElementById("titulo").innerText = "⚡ Compañía de Luz - Texas";
+    document.getElementById("plan1").innerText = "Plan Residencial Básico";
+    document.getElementById("plan2").innerText = "Plan Residencial Fijo";
+    document.getElementById("plan3").innerText = "Plan Comercial";
+    document.getElementById("footer").innerText =
+      "© 2026 - Compañía de Energía Eléctrica | Texas";
+  } else {
+    document.getElementById("titulo").innerText = "⚡ Power Company - Texas";
+    document.getElementById("plan1").innerText = "Basic Residential Plan";
+    document.getElementById("plan2").innerText = "Fixed Residential Plan";
+    document.getElementById("plan3").innerText = "Commercial Plan";
+    document.getElementById("footer").innerText =
+      "© 2026 - Electric Power Company | Texas";
+  }
+
+  }
+</script>
+<!-- BOTÓN DE WHATSAPP -->
+<a href="https://wa.me/528684028470?text=Hola%20estoy%20interesado%20en%20un%20plan%20de%20luz%20en%20Texas"
+   class="whatsapp"
+   target="_blank"
+   title="WhatsApp">
+   💬
+</a>
+
+</body>
+</html>
