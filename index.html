@@ -147,40 +147,23 @@
 
 <script>
 
+function cambiarIdioma(idioma) {
+  if (idioma === "es") {
+    document.getElementById("titulo").innerText = "⚡ Compañía de Luz - Texas";
+    document.getElementById("plan1").innerText = "Plan Residencial Básico";
+    document.getElementById("plan2").innerText = "Plan Residencial Fijo";
+    document.getElementById("plan3").innerText = "Plan Comercial";
+    document.getElementById("footer").innerText =
+      "© 2026 - Compañía de Energía Eléctrica | Texas";
+  } else {
+    document.getElementById("titulo").innerText = "⚡ Power Company - Texas";
+    document.getElementById("plan1").innerText = "Basic Residential Plan";
+    document.getElementById("plan2").innerText = "Fixed Residential Plan";
+    document.getElementById("plan3").innerText = "Commercial Plan";
+    document.getElementById("footer").innerText =
+      "© 2026 - Electric Power Company | Texas";
+  }
 
-  const nombre = document.querySelector('input[placeholder="Nombre / Name"]').value;
-  const correo = document.querySelector('input[placeholder="Correo / Email"]').value;
-  const telefono = document.querySelector('input[placeholder="Teléfono / Phone"]').value;
-  const zip = document.querySelector('input[placeholder="ZIP Code"]').value;
-
-  const mensaje =
-    `Nuevo cliente interesado:%0D%0A` +
-    `Nombre: ${nombre}%0D%0A` +
-    `Correo: ${correo}%0D%0A` +
-    `Teléfono: ${telefono}%0D%0A` +
-    `ZIP Code: ${zip}`;
-
-  window.location.href =
-    `mailto:ghostsstrike0@gmail.com?subject=Nuevo cliente - Compañía de Luz Texas&body=${mensaje}`;
-}
-
-
-  function cambiarIdioma(idioma) {
-    if (idioma === "es") {
-      document.getElementById("titulo").innerText = "⚡ Compañía de Luz - Texas";
-      document.getElementById("plan1").innerText = "Plan Residencial Básico";
-      document.getElementById("plan2").innerText = "Plan Residencial Fijo";
-      document.getElementById("plan3").innerText = "Plan Comercial";
-      document.getElementById("footer").innerText =
-        "© 2026 - Compañía de Energía Eléctrica | Texas";
-    } else {
-      document.getElementById("titulo").innerText = "⚡ Power Company - Texas";
-      document.getElementById("plan1").innerText = "Basic Residential Plan";
-      document.getElementById("plan2").innerText = "Fixed Residential Plan";
-      document.getElementById("plan3").innerText = "Commercial Plan";
-      document.getElementById("footer").innerText =
-        "© 2026 - Electric Power Company | Texas";
-    }
   }
 </script>
 <!-- BOTÓN DE WHATSAPP -->
@@ -193,4 +176,3 @@
 
 </body>
 </html>
-
